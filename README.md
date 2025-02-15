@@ -12,7 +12,7 @@ Currently, this plugin only support `.lua, .c, cpp, .v` file
 for linux, if I'm currect, you can install this plugin by executing this command. you can replace * for any legal directory name.
 
 ```shell
-git clone https://github.com/Rainfxxk/comment.nvim.git ~/.local/share/nvim/site/pack/*/start/comment
+git clone https://github.com/Rainfxxk/comment.nvim.git ~/.config/nvim/pack/*/start/comment
 ```
 
 And add this line into your init.lua, then boom! You can use it in your nvim.
