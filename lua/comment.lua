@@ -1,4 +1,5 @@
 local single_line_comment_table = {
+    nxdc = "# ",
     lua =  "-- ",
     c = "// ",
     cpp = "// ",
@@ -6,6 +7,7 @@ local single_line_comment_table = {
 }
 
 local single_line_comment_pattern_table = {
+    nxdc = "(#[%s]?)",
     lua =  "(%-%-[%s]?)",
     c = "(//[%s]?)",
     cpp = "(//[%s]?)",
@@ -49,7 +51,6 @@ local if_commented = function(start_line, end_line, file_type)
 end
 
 local add_comment = function(start_line, end_line, file_type)
-    vim.print("add_comment")
 
     local comment = single_line_comment_table[file_type]
     local line = vim.api.nvim_buf_get_lines(0, start_line - 1, start_line, false)[1]
