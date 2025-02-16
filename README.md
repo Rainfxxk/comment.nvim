@@ -20,6 +20,18 @@ And add this line into your init.lua, then boom! You can use it in your nvim.
 require("comment")
 ```
 
+when use Lazy.nvim
+
+``` lua
+    {
+        "Rainfxxk/comment.nvim",
+        name = "comment",
+        config = function()
+            require("comment")
+        end
+    }        
+```
+
 ## Usage
 
 After Installation, you can automatically add or del comment by useing `Ctrl+/`
